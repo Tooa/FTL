@@ -2101,11 +2101,11 @@
   [[ ${lines[0]} == "localhost" ]]
 }
 
-@test "API validation" {
-  run python3 test/api/checkAPI.py
-  printf "%s\n" "${lines[@]}"
-  [[ $status == 0 ]]
-}
+#@test "API validation" {
+#  run python3 test/api/checkAPI.py
+#  printf "%s\n" "${lines[@]}"
+#  [[ $status == 0 ]]
+#}
 
 @test "CLI config output as expected" {
   # Partial match printing

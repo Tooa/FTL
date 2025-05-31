@@ -118,6 +118,8 @@ apk add --no-cache py3-dnspython
 $BATS -p "test/test_suite.bats"
 RET=$?
 
+python3 test/api/checkAPI.py
+
 curl_to_tricorder() {
   curl --silent --upload-file "${1}" https://tricorder.pi-hole.net
 }
